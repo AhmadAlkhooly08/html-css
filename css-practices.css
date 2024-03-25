@@ -1,0 +1,34 @@
+body{
+    background-color: #ffffff;
+}
+h3{
+    text-align: center;
+    background-color: #de3d29;
+    margin-top:-9px ;
+    height: 30px;
+    padding-top:10px ;
+    color: #ffffff;
+}
+pre{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 60px;
+    margin-right:100px ;
+    font-weight: 560;
+    font-family: "Roboto";
+    color: #1f1f21;
+    line-height: 60px;
+}
+div{
+    text-align: center;
+}
+button{
+    background-color: #de3d29;
+    padding: 15px;
+    font-size: 15px;
+    margin-top: 30px;
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
