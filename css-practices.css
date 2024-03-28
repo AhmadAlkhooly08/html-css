@@ -17,7 +17,7 @@ pre{
     margin-top: 60px;
     margin-right:100px ;
     font-weight: 900;
-    font-family: "Roboto";
+    font-family: Oswald;
     color: #1f1f21;
     line-height: 70px;
 }
@@ -33,6 +33,7 @@ button{
 a{
     text-decoration: none;
     color: #ffffff;
+    font-family: Oswald,sans-serif;
 }
 .nav{
     color: #1f1f21;
@@ -49,7 +50,7 @@ label{
 }
 li{
     font-weight: 50;
-    font-family: monospace;
+    font-family: "Avenir Next";
     font-size: 15px;
     padding-right: 50px;
     display: inline-block;
@@ -69,4 +70,25 @@ a.nav:hover{
     color: #7e7e7f;
     font-size: 20px;
     font-weight: 400;
+    font-family: "Avenir Next";
+}
+.ahma{
+    font:900 35px Oswald;
+    margin-left: 100px;
+    margin-top: 200px;
+}
+#ahmad{
+    text-align: left;
+    line-height: 40px;
+    color: #626263;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Avenir Next";
+    width: 800px;
+    margin-left: 100px;
+}
+#ahmad2{
+    width: 400px;
+    height: 290px;
+    float: right;
 }
