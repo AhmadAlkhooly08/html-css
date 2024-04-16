@@ -36,6 +36,10 @@ a{
     color: #ffffff;
     font-family: Oswald,sans-serif;
 }
+nav{
+    position: sticky;
+    top: 0;
+}
 .nav{
     color: #1f1f21;
 }
@@ -116,4 +120,4 @@ It does not matter if one of the values above are missing, e.g.
 background:#ff0000 url(smiley.gif); is allowed.
  background: lightblue url("img_tree.gif") no-repeat fixed center;
  background-image: linear-gradient(to bottom,#228c61,transparent);
-*/
+*/ 
