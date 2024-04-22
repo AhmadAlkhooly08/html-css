@@ -1,3 +1,6 @@
+body{
+    background-color: #5d5c5c;
+}
 .main{
     height: 400px;
     width: 100%;
@@ -17,6 +20,7 @@
     background-color: aquamarine;
     height: 200px;
     width: 300px;
+    position: absolute;
     position: relative;
     top: 60;
     left: 600px;
@@ -35,4 +39,53 @@
     background-color: blanchedalmond;
     position: sticky;
     bottom: 3px;
+} 
+ul,ol{
+    list-style: disc inside url(.//second-project.html);
+}
+table{
+    width: 300px;
+    border-spacing: 0;
+    position: relative;
+    left: 590px;
+    bottom: 190px;
+}
+th{
+    background-color: #979797cc;
+    padding: 7px;
+    border: 1px solid #6b6968 ;
+}
+td{
+    background-color: #eeeeee9b;
+    padding: 10px;
+    border: 1px solid #3f3f3f;
+}
+.cv{
+    height: 300px;
+    width: 280px;
+    background-size: contain;
+    background-color: azure;
+    margin: auto;
+    display: block;
+    margin-bottom: 200px;
+    overflow: hidden;
+}
+.ahmad{
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+    top: 20px;
+}
+.cv pre{
+    padding-top: 40px;
+    padding-left: 20px;
+}
+.cv:hover{
+    height: 450px;
+    width: 450px;
+    border-radius: 15px;
+
 }
