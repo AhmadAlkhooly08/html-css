@@ -7,6 +7,7 @@ body{
     background-image: radial-gradient(circle 500px, red,yellow,blue);
     text-align: center;
     padding-top: 500px;
+    transform: skew(5deg,7deg);
 }
 .over{
     background-color: aqua;
@@ -55,6 +56,12 @@ th{
     padding: 7px;
     border: 1px solid #6b6968 ;
 }
+th:hover{
+    background-color: #bbbaba;
+}
+td:hover{
+    background-color: #ece9e9;
+}
 td{
     background-color: #eeeeee9b;
     padding: 10px;
@@ -69,6 +76,7 @@ td{
     display: block;
     margin-bottom: 200px;
     overflow: hidden;
+    transition: 1s;
 }
 .ahmad{
     height: 100px;
@@ -88,4 +96,134 @@ td{
     width: 450px;
     border-radius: 15px;
 
+}
+input:invalid{
+    background-color: #ff000034;
+    color: white;
+}
+input:valid{
+    background-color: #02c20222;
+    color: white;
+}
+input:checked{
+    float: right ;
+}
+p{
+    background-color: #f68383;
+    height: 100px;
+    position: relative;
+    color:white;  
+    padding-top:40px ;
+    scale:  -1;
+}
+p::first-letter{
+    background-color: #3f3f3f;
+    color: #ece9e9;
+}
+p::before{
+    content: '';
+    background-color: #ae0303;
+    height: 15px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+::selection{
+    background-color: aqua;
+}
+/*
+css attribute
+The [attribute] selector is used to select elements with a specified attribute
+The [attribute="value"] selector is used to select elements with a specified attribute and value.
+The [attribute~="value"] selector is used to select elements with an attribute value containing a specified word.
+The [attribute^="value"] selector is used to select elements with the specified attribute, whose value starts with the specified value.
+The [attribute$="value"] selector is used to select elements whose attribute value ends with a specified value.
+The [attribute*="value"] selector is used to select elements whose attribute value contains a specified value.
+*/
+[type='email']{
+    font-family: monospace;
+}
+[p ~="lorem"]{
+    font-style: italic;
+}
+/*
+transform
+
+translate == move (x,y)
+scale == zoom in or zoom out عندما يكون سالب ينقلب المحتوى بالعكس
+matrix == (scaleX,skewX,skewY,scaleY,translateX,translateY)
+*/
+.rotate{
+    height: 80px;
+    width: 80px;
+    background-color: yellow;
+    rotate:20deg;
+}
+.skew{
+    height: 80px;
+    width: 80px;
+    background-color: yellow; 
+    transform: matrix(1,.2,.5,1,200,-60);
+}
+.animation{
+    width: 100%;
+    height: 500px;
+    background-color: #222;
+}
+.anim{
+    width: 80px;
+    height: 80px;
+    background-color: red;
+    animation-name: box;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-iteration-count: 3;
+}
+@keyframes box{
+    from{
+        width: 0%;
+        background-color: red;
+    }
+    to{
+        width: 100%;
+        background-color: blue;
+    }
+}
+.anim2{
+    background-color: #ae0303;
+    width: 80px;
+    height: 80px;
+    border-radius: 9px;
+    animation: box2 3s  1s linear  7 forwards  ;
+}
+.anim2:hover{
+    animation-play-state: paused;
+    cursor: progress;
+}
+@keyframes box2{
+    0%{
+        translate: 0 0;
+        background-color: aqua;
+        rotate: 0;
+    }
+    25%{
+        translate: 0 335px;
+        background-color: green;
+        rotate: 90deg;
+    }
+    50%{
+        translate: 1200px 335px;
+        background-color: yellow;
+        rotate: 180deg;
+    }
+    75%{
+        translate: 1200px 0;
+        background-color: blue;
+        rotate: 270deg;
+    }
+    100%{
+        translate: 0 0;
+        background-color: darkgray;
+        rotate: 360deg;
+    }
 }
