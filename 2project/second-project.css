@@ -227,3 +227,26 @@ matrix == (scaleX,skewX,skewY,scaleY,translateX,translateY)
         rotate: 360deg;
     }
 }
+.first{
+    background-color: red;
+    width:80px;
+    height: 80px;
+    margin: 10px;
+}
+.first:hover{
+    visibility: hidden;
+}
+.second{
+    background-color: red;
+    width:80px;
+    height: 80px;
+    margin: 10px;
+    /*display: none;*/
+}
+.thirth{
+    background-color: red;
+    width:80px;
+    height: 80px;
+    margin: 10px;
+    opacity: .7;
+}
