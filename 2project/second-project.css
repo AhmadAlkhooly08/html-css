@@ -17,7 +17,7 @@ body{
     border: 7px darkblue dashed;
     overflow: auto;
 }
-.parent{
+.parent1{
     background-color: aquamarine;
     height: 200px;
     width: 300px;
@@ -27,7 +27,7 @@ body{
     left: 600px;
     bottom: 200px;
 }
-.parent div{
+.parent1 div{
     height: 50px;
 }
 .one{
@@ -250,3 +250,43 @@ matrix == (scaleX,skewX,skewY,scaleY,translateX,translateY)
     margin: 10px;
     opacity: .7;
 }
+.parent{
+    background-color: gold;
+    padding: 10px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: space-evenly;
+    /*
+    justify-content == start,center,end,space-around,space-beetween,space-evenly
+    */
+   /* flex-flow:flex-direction flex-wrap ;*/
+    gap:10px ;
+}
+.parent div{
+    padding: 5px;
+}
+.item1{
+    background-color: green;
+    order: -1 ;
+    flex-grow: 1;
+    align-self:center;
+}
+.item2{
+    background-color: red;
+    flex-grow: 1;
+    align-self:center;
+    flex-shrink: 0;
+}
+.item3{
+    background-color: aqua;
+    flex-grow: 1;
+    align-self:center;
+}
+.item4{
+    background-color: silver;
+    flex-grow: 1;
+    align-self:center;
+    
+}
+/*flex:flex-grow flex-shrink flex-basis ;*/
