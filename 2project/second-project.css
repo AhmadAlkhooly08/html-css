@@ -290,3 +290,9 @@ matrix == (scaleX,skewX,skewY,scaleY,translateX,translateY)
     
 }
 /*flex:flex-grow flex-shrink flex-basis ;*/
+.father{
+    background-color: #ae0303;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr) ;
+}
