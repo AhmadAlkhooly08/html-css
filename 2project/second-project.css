@@ -293,6 +293,19 @@ matrix == (scaleX,skewX,skewY,scaleY,translateX,translateY)
 .father{
     background-color: #ae0303;
     padding: 10px;
+    margin: 20px;
     display: grid;
-    grid-template-columns: repeat(5,1fr) ;
+    grid-template-columns: repeat(auto-fill,220px) ;
+    grid-template-rows: repeat(2,min-max(40px,auto));
+    gap: 7px 7px;
+    justify-content: center;
+    /*min-maxThe minmax()  size range greater than or equal to min and less than or equal to max
+    gap == row-gap column-gap
+    */
+}
+.father div{
+    background-color: gold;
+    padding: 10px;
+    color: aqua;
+   
 }
