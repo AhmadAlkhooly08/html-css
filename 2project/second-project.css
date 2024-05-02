@@ -294,12 +294,13 @@ matrix == (scaleX,skewX,skewY,scaleY,translateX,translateY)
     background-color: #ae0303;
     padding: 10px;
     margin: 20px;
+    height: 400px;
     display: grid;
     grid-template-columns: repeat(auto-fill,220px) ;
     grid-template-rows: repeat(2,min-max(40px,auto));
     gap: 7px 7px;
     justify-content: center;
-    /*min-maxThe minmax()  size range greater than or equal to min and less than or equal to max
+    /*The minmax()  size range greater than or equal to min and less than or equal to max
     gap == row-gap column-gap
     */
 }
@@ -308,4 +309,14 @@ matrix == (scaleX,skewX,skewY,scaleY,translateX,translateY)
     padding: 10px;
     color: aqua;
    
+}
+.father .one{
+    background: #575555;
+    display: grid;
+    grid-column: 1/5;
+}
+.father .tow{
+    background: rebeccapurple;
+    display: grid;
+    grid-row: 1/5;
 }
