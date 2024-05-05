@@ -3,11 +3,11 @@ body{
 }
 .main{
     height: 400px;
-    width: 100%;
+    width: 50%;
     background-image: radial-gradient(circle 500px, red,yellow,blue);
-    text-align: center;
+    padding: 10px;
     padding-top: 500px;
-    transform: skew(5deg,7deg);
+    /*transform: skew(5deg,7deg);*/
 }
 .over{
     background-color: aqua;
@@ -114,7 +114,6 @@ p{
     position: relative;
     color:white;  
     padding-top:40px ;
-    scale:  -1;
 }
 p::first-letter{
     background-color: #3f3f3f;
@@ -297,18 +296,16 @@ matrix == (scaleX,skewX,skewY,scaleY,translateX,translateY)
     height: 400px;
     display: grid;
     grid-template-columns: repeat(auto-fill,220px) ;
-    grid-template-rows: repeat(2,min-max(40px,auto));
+    grid-template-rows: repeat(3,120px);
     gap: 7px 7px;
     justify-content: center;
     /*The minmax()  size range greater than or equal to min and less than or equal to max
     gap == row-gap column-gap
-    */
+        */
 }
 .father div{
     background-color: gold;
-    padding: 10px;
-    color: aqua;
-   
+    color: white;
 }
 .father .one{
     background: #575555;
@@ -316,7 +313,64 @@ matrix == (scaleX,skewX,skewY,scaleY,translateX,translateY)
     grid-column: 1/5;
 }
 .father .tow{
-    background: rebeccapurple;
-    display: grid;
-    grid-row: 1/5;
+    background: green;
+    grid-column: 5;
+    grid-row: 1 / 4;
+}
+.father .three{
+    background: aquamarine;
+    grid-column: 1/5;
+}
+.father .four{
+    background: skyblue;
+    grid-column: 1/5;
+}
+.responsive{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-basis: content;
+}
+.responsive div{
+    background-color: rebeccapurple;
+    width: 400px;
+    height: 300px;
+}
+@media (max-width:500px){
+    body{
+        width:500px;
+    }
+    .responsive{
+        display: flex;
+        flex-direction: column;
+    }
+    .responsive div{
+        width: 100%;
+    }
+    .animation{
+        width: 400px;
+    }
+    @keyframes box2{
+        25%{
+            translate: 0 335px;
+        }
+        50%{
+            translate: 300px 335px;
+        }
+        75%{
+            translate: 300px 0;
+        }
+        100%{
+            translate: 0 0;
+        }
+    }
+}
+@media (min-width:501) and (max-width:798) {
+    .responsive{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .responsive div{
+        width: 48%;
+    }
 }
