@@ -336,6 +336,39 @@ matrix == (scaleX,skewX,skewY,scaleY,translateX,translateY)
     width: 400px;
     height: 300px;
 }
+.form{
+    background-color: #003;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+form{
+    background-color: #0000889f;
+    padding: 20px;
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+form input{
+    background-color: #0000aaa0;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 7px 7px;
+    flex-basis: 200px ;
+    flex-grow: 1;
+}
+form button{
+    background-color: #14a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    flex-basis: 30px;
+    flex-grow: 1;
+}
 @media (max-width:500px){
     body{
         width:500px;
