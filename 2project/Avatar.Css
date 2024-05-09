@@ -1,24 +1,25 @@
 body{
     background-image: url('https://ca-times.brightspotcdn.com/dims4/default/c1a61d9/2147483647/strip/true/crop/3840x2160+0+0/resize/1200x675!/format/webp/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F03%2F0d%2F44d557194a8db3da6f4536cc2f30%2Favtr-226.jpg');
+    background-image: linear-gradient(to right,#16161704, #7a282802),url('https://ca-times.brightspotcdn.com/dims4/default/c1a61d9/2147483647/strip/true/crop/3840x2160+0+0/resize/1200x675!/format/webp/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F03%2F0d%2F44d557194a8db3da6f4536cc2f30%2Favtr-226.jpg');    
     background-size: cover;
 }
+body:hover{
+    background-image: url('https://ca-times.brightspotcdn.com/dims4/default/c1a61d9/2147483647/strip/true/crop/3840x2160+0+0/resize/1200x675!/format/webp/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F03%2F0d%2F44d557194a8db3da6f4536cc2f30%2Favtr-226.jpg'), linear-gradient(right,rgba(41, 41, 41, 0));    
+}
 .logo{
-    display: inline;
+    float: left;
     color: white;
     margin-left: 20px;
 }
-.topnav{
-    display: inline-flex;
-    flex-direction: row;
-    gap: 150px;
-    float: right;
+.container{
     margin: 20px;
     margin-right: 100px;
 }
-.topnav a{
+.container li{
+    float: right;
     color: white;
     text-decoration: none;
-    display: block;
+    padding: 50px;
 }
 .middle{
     color: white;
