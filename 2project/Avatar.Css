@@ -1,25 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
 body{
     background-image: url('https://ca-times.brightspotcdn.com/dims4/default/c1a61d9/2147483647/strip/true/crop/3840x2160+0+0/resize/1200x675!/format/webp/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F03%2F0d%2F44d557194a8db3da6f4536cc2f30%2Favtr-226.jpg');
-    background-image: linear-gradient(to right,#16161704, #7a282802),url('https://ca-times.brightspotcdn.com/dims4/default/c1a61d9/2147483647/strip/true/crop/3840x2160+0+0/resize/1200x675!/format/webp/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F03%2F0d%2F44d557194a8db3da6f4536cc2f30%2Favtr-226.jpg');    
+    background-image: linear-gradient(to right,#01022de5 30%, #00000047),
+                    url('https://ca-times.brightspotcdn.com/dims4/default/c1a61d9/2147483647/strip/true/crop/3840x2160+0+0/resize/1200x675!/format/webp/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F03%2F0d%2F44d557194a8db3da6f4536cc2f30%2Favtr-226.jpg');    
     background-size: cover;
 }
 body:hover{
-    background-image: url('https://ca-times.brightspotcdn.com/dims4/default/c1a61d9/2147483647/strip/true/crop/3840x2160+0+0/resize/1200x675!/format/webp/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F03%2F0d%2F44d557194a8db3da6f4536cc2f30%2Favtr-226.jpg'), linear-gradient(right,rgba(41, 41, 41, 0));    
+    background-image: linear-gradient(to right,#01022de5 30%, transparent),
+    url('https://ca-times.brightspotcdn.com/dims4/default/c1a61d9/2147483647/strip/true/crop/3840x2160+0+0/resize/1200x675!/format/webp/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F03%2F0d%2F44d557194a8db3da6f4536cc2f30%2Favtr-226.jpg');    
+}
+*{
+    font-family: "Ubuntu Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+    color: white;
 }
 .logo{
-    float: left;
-    color: white;
-    margin-left: 20px;
+    font-size: 30px ;
+    text-transform: uppercase ;
 }
-.container{
-    margin: 20px;
-    margin-right: 100px;
-}
-.container li{
-    float: right;
-    color: white;
-    text-decoration: none;
-    padding: 50px;
+ul{
+    list-style: none;
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
 }
 .middle{
     color: white;
