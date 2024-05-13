@@ -1,0 +1,91 @@
+body{
+    background-color: #000110;
+}
+body::before{
+    content: '';
+    width: 20%;
+    height: 100%;
+    background-color: #0e1c29;
+    position: absolute;
+    z-index: -1;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+.before{
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 10px;
+}
+.before img{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    border: 2px solid white;
+}
+.before h2{
+    padding-left: 40px;
+    font-size: 35px;
+}
+.icon{
+    display: flex;
+    flex-direction: column;
+}
+.first,.second,.third,.ford,.five,.sex,.seven{
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.first h3{
+    margin-left: 55px;
+}
+.first i{
+    font-size: 29px;
+}
+.second h3{
+    margin-left: 60px;
+}
+.second i{
+    font-size: 29px;
+    margin-left: 3px;
+}
+.third h3{
+    margin-left: 60px;
+}
+.third i{
+    font-size: 29px;
+    margin-left: 3px;
+}
+.ford h3{
+    margin-left: 60px;
+}
+.ford i{
+    font-size: 29px;
+    margin-left: 3px;
+}
+.five h3{
+    margin-left: 60px;
+}
+.five i{
+    font-size: 29px;
+    margin-left: 3px;
+}
+.sex h3{
+    margin-left: 60px;
+}
+.sex i{
+    font-size: 29px;
+    margin-left: 3px;
+}
+.seven h3{
+    margin-left: 60px;
+}
+.seven i{
+    font-size: 29px;
+    margin-left: 3px;
+}
