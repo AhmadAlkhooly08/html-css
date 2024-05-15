@@ -6,7 +6,7 @@ body::before{
     width: 18%;
     height: 100%;
     background-color: #0e1c29;
-    position: absolute;
+    position: fixed;
     z-index: -1;
 }
 *{
@@ -105,14 +105,14 @@ body::before{
 }
 .dash2{
     position: fixed;
-    top:38%;
+    top:34%;
 }
 .card{
     display: flex;
     flex-direction: row;
     position: fixed;
     left: 20%;
-    bottom: 62%;
+    bottom: 65%;
 }
 .one,.tow,.three,.four{
     display: flex;
@@ -121,20 +121,64 @@ body::before{
     background-color: #111f2e;
     border-radius: 10px;
     width: 185px;
-    height: 120px;
+    height: 100px;
     color: white;
     align-items: center;
     padding: 30px;
 }
-.product{
-    display: flex;
+.product,.price,.count{
+    position: fixed;
+    left: 20%;
+    bottom: 49%;
+    color: white;
+    width: 38%;
+    background-color: #1f74f8;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+.manue,.fiyat,.say{
     position: absolute;
     left: 20%;
-    width: 50%;
+    bottom: 1%;
     color: white;
+    width: 39%; 
+    text-align: center;
 }
-.product .p1{
-    background-color: #1f74f8;
-    padding: 5px;
-
+.tv,.laptop,.phone,.wash,.keyboard,.mouse,.headphone{
+    background-color: #111f2e;
+    border-radius: 10px;
+    padding: 7px;
+    margin-bottom: 16px;
+}
+.price{
+    position: fixed;
+    left: 61%;
+    width: 16%;
+}
+.fiyat{
+    width: 16%;
+    position: absolute;
+    left: 62%; 
+}
+.fiyat h3{
+    background-color: green;
+    width: fit-content;
+    margin-left: 80px;
+}
+.count{
+    position: fixed;
+    left: 80%;
+    width: 16%; 
+}
+.say{
+    width: 16%;
+    position: absolute;
+    left: 81%; 
+}
+.say h3{
+    background-color: yellow;
+    color: black;
+    width: fit-content;
+    margin-left: 80px;
 }
