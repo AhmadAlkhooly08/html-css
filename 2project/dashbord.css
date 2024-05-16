@@ -1,184 +1,71 @@
-body{
-    background-color: #000110;
-}
-body::before{
-    content: '';
-    width: 18%;
-    height: 100%;
-    background-color: #0e1c29;
-    position: fixed;
-    z-index: -1;
-}
 *{
     padding: 0;
     margin: 0;
+    color: white;
     font-family: sans-serif;
 }
-.before{
-    display: inline-flex;
-    align-items: center;
-    color: white;
-    padding: 10px;
+body{
+    background-color: #001;
 }
-.before img{
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+.profile h2{
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.image{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid white;
+    flex-shrink: 0;
+}
+.image img{
+    width: 100%;
+}
+.menue{
+    background-color: #123;
     width: 60px;
-    height: 60px;
-    border-radius: 100%;
-    border: 2px solid white;
+    height: 100vh;
+    padding: 20px;
+    overflow: hidden;
+    transition: .5s;
 }
-.before h2{
-    padding-left: 30px;
-    font-size: 35px;
+.menue:hover{
+    width: 260px;
 }
-.icon{
-    display: flex;
-    flex-direction: column;
+ul{
+    list-style: none;
+    position: relative;
+    height: 95%;
 }
-.first,.second,.third,.ford,.five,.sex,.seven{
+ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px 0;
     display: flex;
     align-items: center;
-    color: white;
-    padding: 10px;
-    margin-left: 15px;
-    margin-top: 15px;
-}
-.first h3{
-    margin-left: 50px;
-}
-.first i{
-    font-size: 29px;
-}
-.second h3{
-    margin-left: 53px;
-}
-.second i{
-    font-size: 29px;
-    margin-left: 3px;
-}
-.third h3{
-    margin-left: 50px;
-}
-.third i{
-    font-size: 29px;
-    margin-left: 3px;
-}
-.ford h3{
-    margin-left: 50px;
-}
-.ford i{
-    font-size: 29px;
-    margin-left: 3px;
-}
-.five h3{
-    margin-left: 53px;
-}
-.five i{
-    font-size: 29px;
-    margin-left: 3px;
-}
-.sex h3{
-    margin-left: 50px;
-}
-.sex i{
-    font-size: 29px;
-    margin-left: 3px;
-}
-.seven h3{
-    margin-left: 53px;
-}
-.seven i{
-    font-size: 29px;
-    margin-left: 3px;
-}
-.dash,.dash2{
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    left: 20%;
-    top: 0;
-    width: 77%;
-    background-color: #1f74f8;
+    gap: 40px;
+    transition: .5s;
     border-radius: 10px;
-    padding: 10px;
-    color: white;
-    margin-top: 20px;
 }
-.dash2{
-    position: fixed;
-    top:34%;
+ul li a:hover,.active{
+    background-color: #ffffff55;
 }
-.card{
-    display: flex;
-    flex-direction: row;
-    position: fixed;
-    left: 20%;
-    bottom: 65%;
-}
-.one,.tow,.three,.four{
-    display: flex;
-    justify-content: space-between;
-    margin-right: 30px;  
-    background-color: #111f2e;
-    border-radius: 10px;
-    width: 185px;
-    height: 100px;
-    color: white;
-    align-items: center;
-    padding: 30px;
-}
-.product,.price,.count{
-    position: fixed;
-    left: 20%;
-    bottom: 49%;
-    color: white;
-    width: 38%;
-    background-color: #1f74f8;
-    padding: 10px;
-    border-radius: 10px;
-    text-align: center;
-}
-.manue,.fiyat,.say{
+.log-out{
     position: absolute;
-    left: 20%;
-    bottom: 1%;
-    color: white;
-    width: 39%; 
-    text-align: center;
+    bottom: 0;
+    width: 100%;
 }
-.tv,.laptop,.phone,.wash,.keyboard,.mouse,.headphone{
-    background-color: #111f2e;
-    border-radius: 10px;
-    padding: 7px;
-    margin-bottom: 16px;
+.log-out a{
+    background-color: #a00;
 }
-.price{
-    position: fixed;
-    left: 61%;
-    width: 16%;
-}
-.fiyat{
-    width: 16%;
-    position: absolute;
-    left: 62%; 
-}
-.fiyat h3{
-    background-color: green;
-    width: fit-content;
-    margin-left: 80px;
-}
-.count{
-    position: fixed;
-    left: 80%;
-    width: 16%; 
-}
-.say{
-    width: 16%;
-    position: absolute;
-    left: 81%; 
-}
-.say h3{
-    background-color: yellow;
-    color: black;
-    width: fit-content;
-    margin-left: 80px;
+ul li a i{
+    font-size: 30px;
 }
