@@ -123,9 +123,11 @@ th{
     background-color:#0481ff ;
 }
 .price,.count{
-    background-color: green;
     padding: 6px;
     border-radius: 6px;
+}
+.price{
+    background-color: green;
 }
 .count{
     background-color: gold;
