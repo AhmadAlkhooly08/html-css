@@ -8,65 +8,99 @@ body{
     font-family: sans-serif;
     color: white;
 }
-.menu{
-    background-color: #123;
-    width: 73px;
-    height: 100vh;
-    overflow: hidden;
-    transition: .5s;
-}
-.menu:hover{
-    width: 260px;
-}
 .profile{
     display: flex;
     align-items: center;
-    gap: 20px;
-    margin: 10px;
+    gap: 30px;
+    margin-bottom: 20px;
 }
-.profile img{
+.profile h2{
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.image{
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    overflow: hidden;
     border: 3px solid white;
+    flex-shrink: 0;
+}
+.image img{
+    width: 100%;
+}
+.menue{
+    background-color: #123;
+    width: 50px;
+    height: 100vh;
+    padding: 20px;
+    overflow: hidden;
+    transition: .7s;
+}
+.menue:hover{
+    width: 220px;
 }
 ul{
-  margin: 10px;
-  margin-top: 35px;
-  padding: 10px; 
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 35px;
-  position: relative;
-  height: 76%;
-}
-ul li,.call{
     list-style: none;
-    
+    position: relative;
+    height: 95%;
 }
-ul li .inside,.call{
+ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    margin: 20px 0;
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 45px;
+    transition: .7s;
+    border-radius: 10px;
+    margin-top: 30px;
 }
-ul li .inside,.call p{
-    font-size: 20px;
+ul li a:hover{
+    background-color: #ffffff55;
 }
-ul .call{
-    
-    
-}
-.call a{
+.log-out{
     position: absolute;
     bottom: 0;
+    width: 90%;
+}
+.log-out a{
     background-color: #a00;
-    text-decoration: none;
-    padding: 18px;
-    border-radius:18px ;
-    display: flex;
-    gap: 15px;
+}
+ul li a i{
+    font-size: 30px;
     color: white;
-    font-size: 26px;
-    overflow: hidden;
+}
+.content{
+    width: 70%;
+    margin: 0 auto;
+
+}
+.content .about{
+    flex-basis: 200px;
+    height: fit-content;
+    background-color: #123;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius:10px ;
+    margin-top: 70px;
+}
+.content .about p{
+    line-height: 27px;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.content .about h1,.content h1{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.content .one h1{
+    margin-top: 40px;
 }
