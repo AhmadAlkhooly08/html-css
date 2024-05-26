@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmad's CV</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --sidebar-width: 60px;
+            --sidebar-expanded-width: 220px;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #123;
+            color: #fff;
+            display: flex;
+        }
+        .sidebar {
+            background-color: #1a2b3c;
+            width: var(--sidebar-width);
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: width 0.3s;
+            overflow: hidden;
+        }
+        .sidebar:hover {
+            width: var(--sidebar-expanded-width);
+        }
+        .sidebar img {
+            width: 40px;
+            margin-top: 20px;
+            border-radius: 50%;
+        }
+        .sidebar a {
+            text-decoration: none;
+            color: #fff;
+            width: 100%;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s;
+        }
+        .sidebar a:hover {
+            background-color: #345;
+        }
+        .sidebar a i {
+            font-size: 20px;
+            margin-right: 10px;
+        }
+        main {
+            margin-left: var(--sidebar-width);
+            width: calc(100% - var(--sidebar-width));
+            padding: 2em;
+            max-width: 1000px;
+            transition: margin-left 0.3s, width 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .sidebar:hover + main {
+            margin-left: var(--sidebar-expanded-width);
+            width: calc(100% - var(--sidebar-expanded-width));
+        }
+        main h1 {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+            text-align: center;
+        }
+        main section {
+            background-color: #1a2b3c;
+            padding: 2em;
+            border-radius: 10px;
+            margin-bottom: 2em;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 800px;
+            text-align: center;
+        }
+        main h2 {
+            color: #e7e7e7;
+            border-bottom: 2px solid #e7e7e7;
+            padding-bottom: 0.5em;
+            margin-bottom: 1em;
+            font-size: 1.75em;
+        }
+        main p, main ul {
+            color: #ddd;
+            margin: 0.5em 0;
+            line-height: 1.6;
+            text-align: center;
+        }
+        main ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        main ul li {
+            margin: 0.5em 0;
+        }
+        main ul li strong {
+            font-weight: 700;
+        }
+        footer {
+            background-color: #1a2b3c;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            transition: left 0.3s, width 0.3s;
+            left: var(--sidebar-width);
+        }
+        .sidebar:hover ~ footer {
+            left: var(--sidebar-expanded-width);
+            width: calc(100% - var(--sidebar-expanded-width));
+        }
+        main {
+        margin: 0 auto; /* Centering the main content horizontally */
+        padding: 2em;
+        width: 80%; /* Adjust as needed */
+        max-width: 1000px; /* Limiting the maximum width */
+        transition: margin 0.3s, width 0.3s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+        @media (max-width: 768px) {
+            main {
+                padding: 1em;
+            }
+            main h1 {
+                font-size: 2em;
+            }
+            main h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <img src="profile.jpg" alt="Profile Picture">
+        <a href="#"><i class="home-icon">🏠</i> <span>Home</span></a>
+        <a href="#about"><i class="user-icon">👤</i> <span>About</span></a>
+        <a href="#experience"><i class="briefcase-icon">💼</i> <span>Experience</span></a>
+        <a href="#education"><i class="education-icon">🎓</i> <span>Education</span></a>
+        <a href="#skills"><i class="skills-icon">💡</i> <span>Skills</span></a>
+        <a href="#contact"><i class="contact-icon">📞</i> <span>Contact</span></a>
+    </div>
+    <main>
+        <h1>Ahmad's CV</h1>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>As a 16-year-old high school student currently in the 10th grade, I am deeply passionate about coding and aspire to become a proficient programmer. Born in America, I am committed to pursuing a career in the field of technology with the goal of making meaningful contributions to the ever-evolving digital landscape. Through dedicated self-study and formal education, I am eager to continue expanding my skills and knowledge, with a steadfast commitment to continuous learning and a proactive approach to problem-solving.</p>
+        </section>
+        <section id="experience">
+            <h2>Experience</h2>
+            <ul>
+                <li><strong>Job Title 1</strong> - Company 1 (Year - Year)</li>
+                <p>Description of responsibilities and achievements.</p>
+                <li><strong>Job Title 2</strong> - Company 2 (Year - Year)</li>
+                <p>Description of responsibilities and achievements.</p>
+            </ul>
+        </section>
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Degree</strong> - Institution (Year - Year)</li>
+                <p>Description of coursework and achievements.</p>
+            </ul>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Skill 1</li>
+                <li>Skill 2</li>
+                <li>Skill 3</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>You can reach me at: <a href="mailto:ahmad@example.com" style="color: #1abc9c;">ahmad@example.com</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Ahmad. All rights reserved.</p>
+    </footer>
+</body>
+</html>
