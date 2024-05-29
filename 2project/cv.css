@@ -39,7 +39,6 @@ body{
     padding: 20px;
     overflow: hidden;
     transition: .7s;
-    position: fixed;
 }
 .menue:hover{
     width: 220px;
